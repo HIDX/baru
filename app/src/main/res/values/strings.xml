@@ -2,15 +2,16 @@
     <string name="app_name">eventm</string>
 
 
-   <string name="pref_name">My Pref</string>
-    <string name="pref_key">My Key</string>
-    
-    <string name="Slide1_title">Computer</string>
-    <string name="Slide1_dots">Computer Repair and Service</string>
+    <string name="slide_1_title">LCD</string>
+    <string name="slide_1_desc">LCD Repair and Service</string>
 
-    <string name="Slide2_title">SmartPhone</string>
-    <string name="Slide2_dots">SmartPhone Repair and Service</string>
+    <string name="slide_2_title">Computer</string>
+    <string name="slide_2_desc">Computer Repair and Service</string>
 
-    <string name="Slide3_title">Tablet</string>
-    <string name="Slide3_dots">Tablet Repair and Service</string>
+    <string name="slide_3_title">SmartPhone</string>
+    <string name="slide_3_desc">SmartPhone Repair and Service</string>
+
+    <string name="slide_4_title">Tablet</string>
+    <string name="slide_4_desc">Tablet Repair and Service</string>
+
 </resources>

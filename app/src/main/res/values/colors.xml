@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+  <color name="colorPrimary">#008577</color>
+  <color name="colorPrimaryDark">#00574B</color>
+  <color name="colorAccent">#D81B60</color>
 
   <color name="white">#FFFFFF</color>
   <color name="ivory">#FFFFF0</color>
@@ -125,8 +125,8 @@
   <color name="dark_slate_gray">#2F4F4F</color>
   <color name="sea_green">#2E8B57</color>
   <color name="forest_green">#228B22</color>
-  <color name="slide2">#20B2AA</color>
-  <color name="slide1">#1E90FF</color>
+  <color name="colorSlide_2">#20B2AA</color>
+  <color name="colorSlide_1">#1E90FF</color>
   <color name="midnight_blue">#191970</color>
   <color name="aqua">#00FFFF</color>
   <color name="cyan">#00FFFF</color>
@@ -139,7 +139,7 @@
   <color name="teal">#008080</color>
   <color name="slide3">#008000</color>
   <color name="slide">#006400</color>
-  <color name="blue">#0000FF</color>
+  <color name="colorSlide_3">#0000FF</color>
   <color name="medium_blue">#0000CD</color>
   <color name="dark_blue">#00008B</color>
   <color name="navy">#000080</color>
