@@ -18,19 +18,21 @@ class RegisterActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
 
+        txt_login.setOnClickListener { startActivity(Intent(this@RegisterActivity,LoginActivity::class.java)) } // pergi ke hal login
+
         btn_register.setOnClickListener {
-            createNewUser(name.text.toString(), email.text.toString(), password.text.toString())
+            createNewUser(name_sign_up.text.toString(),phone_number_sign_up.text.toString(), email_sign_up.text.toString(), password_sign_up.text.toString()) // membuat new user
         }
     }
 
-    private fun createNewUser(name:String, email:String, password:String){
-        Common.api.registerUser(name,email,password)
+    private fun createNewUser(username:String, email:String, password:String,numberphone:String){
+        Common.api.registerUser(username,email,password,numberphone)
             .enqueue(object: Callback<APIresponse> {
-                override fun onFailure(call: Call<APIresponse>, t: Throwable) {
+                override fun onFailure(call: Call<APIresponse>, t: Throwable) { // fungsi saat server tidak merspon
                     Toast.makeText(this@RegisterActivity, t!!.message, Toast.LENGTH_SHORT).show()
                 }
 
-                override fun onResponse(call: Call<APIresponse>, responseLogReg: Response<APIresponse>) {
+                override fun onResponse(call: Call<APIresponse>, responseLogReg: Response<APIresponse>) { // saat server merespon
                     if(responseLogReg!!.body()!!.error){
                         Toast.makeText(this@RegisterActivity, responseLogReg.body()!!.error_msg, Toast.LENGTH_SHORT).show()
                     }else{

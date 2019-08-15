@@ -64,7 +64,13 @@ class WelcomeActivity : AppCompatActivity(), View.OnClickListener {
                 if (position == layouts.size - 1)
                 // kondisiuntuk menghilangkan text di slide terakhir
                 {
+                    BtnNext!!.setText("Done")
                     BtnSkip!!.visibility = View.INVISIBLE// untuk menghilangkan text di slide terakhir
+                }
+                else
+                {
+                    BtnNext!!.setText("Next")
+                    BtnSkip!!.visibility = View.VISIBLE// untuk terlihat di di slide yg lain
                 }
             }
 
@@ -111,7 +117,7 @@ class WelcomeActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     private fun loadHome() {
-        startActivity(Intent(this, MainActivity::class.java))
+        startActivity(Intent(this, LoginActivity::class.java))
         finish()
     }
 
