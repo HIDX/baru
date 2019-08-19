@@ -45,16 +45,16 @@ class LoginActivity: AppCompatActivity(){
 
                 override fun onResponse(call: Call<APIresponse>, response: Response<APIresponse>) {
                     Log.e("responsenya ", response.body().toString())
-                    if (response!!.body()!!.error){
-                        Log.i("respone error", response!!.body().toString())
-                        Toast.makeText(this@LoginActivity,response.body()!!.error_msg, Toast.LENGTH_LONG).show()
-                    }
-                    else {
-                        Log.i("respone tidak error", response!!.body().toString())
-                        val intent = Intent(this@LoginActivity, MainActivity::class.java)// untuk pindah ke main activity nya
-                        startActivity(intent)
-
-                    }
+//                    if (response!!.body()!!.error){
+//                        Log.i("respone error", response!!.body().toString())
+//                        Toast.makeText(this@LoginActivity,response.body()!!.error_msg, Toast.LENGTH_LONG).show()
+//                    }
+//                    else {
+//                        Log.i("respone tidak error", response!!.body().toString())
+//                        val intent = Intent(this@LoginActivity, MainActivity::class.java)// untuk pindah ke main activity nya
+//                        startActivity(intent)
+//
+//                    }
                 }
             })
 
