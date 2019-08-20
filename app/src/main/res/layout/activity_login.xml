@@ -62,11 +62,11 @@
         />
 
         <TextView
-                android:id="@+id/btn_forgot_password"
+                android:id="@+id/txt_forget_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="Forgot Password?"
+                android:text="Forget Password?"
                 android:textColor="@color/cold" />
 
         <Button

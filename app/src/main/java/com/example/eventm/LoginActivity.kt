@@ -25,7 +25,7 @@ class LoginActivity: AppCompatActivity(){
 
         //Event
         txt_register.setOnClickListener { startActivity(Intent(this@LoginActivity,RegisterActivity::class.java)) } // untuk pindah ke hal regis
-
+        txt_forget_password.setOnClickListener { startActivity(Intent(this@LoginActivity,ForgetPasswordActivity::class.java)) }
         btn_login.setOnClickListener {
             authenticateUser(email_login.text.toString(),password_login.text.toString()) // memaggil fungsi yg sudah dibuat
 
