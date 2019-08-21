@@ -39,19 +39,21 @@ class MainActivity : AppCompatActivity() {
         itemList.add(ItemProduct("About", R.drawable.ic_about))
         itemList.add(ItemProduct("Help", R.drawable.ic_help))
 
-        val myrv = findViewById<View>(R.id.rv_item_product) as RecyclerView
-        val myAdapter = ProductAdapter(this, itemList)
-        myrv.layoutManager = GridLayoutManager(this, 3)
-        myrv.adapter = myAdapter
-
         //slider menu
-        val Rview =findViewById<View>(R.id.rv_menu_slide) as RecyclerView // gunaka as rv untuk mengimpor rv nya
+        val Rview_slide =findViewById<View>(R.id.rv_menu_slide) as RecyclerView // gunaka as rv untuk mengimpor rv nya
         val name_Slide= arrayOf("tablet","smartphone","computer")
-        val LManager = LinearLayoutManager(this,HORIZONTAL,false)//jika merah impor saja manual
-        Rview.setLayoutManager(LManager)
+        val LManager = LinearLayoutManager(this, HORIZONTAL,false)//jika merah impor saja manual
+        Rview_slide.setLayoutManager(LManager)
         //Dots_Home = findViewById<View>(R.id.dots_Card) as LinearLayout
-        Rview.adapter = SliderHomeAdapter(Img_Slide,name_Slide,this)
-       // createDots(0)
+        Rview_slide.adapter = SliderHomeAdapter(Img_Slide,name_Slide,this)
+        // createDots(0)
+
+
+        //rv item menu
+        val myrvItem = findViewById<View>(R.id.rv_item_product) as RecyclerView
+        val Adapter_item = ProductAdapter(this, itemList)
+        myrvItem.layoutManager = GridLayoutManager(this, 3)
+        myrvItem.adapter = Adapter_item
 
     }
     /*private fun createDots(current_position: Int) {

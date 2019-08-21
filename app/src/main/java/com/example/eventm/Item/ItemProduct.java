@@ -3,30 +3,30 @@ package com.example.eventm.Item;
 public class ItemProduct {
 
     private String title;
-    private int Thumbnail;
+    private int ImageM;
 
     public ItemProduct(){
 
     }
 
-    public ItemProduct(String title, int thumbnail) {
+    public ItemProduct(String title, int imageM) {
         this.title = title;
-        Thumbnail = thumbnail;
+        ImageM = imageM;
     }
 
     public String getTitle() {
         return title;
     }
 
-    public int getThumbnail() {
-        return Thumbnail;
-    }
-
     public void setTitle(String title) {
         this.title = title;
     }
 
-    public void setThumbnail(int thumbnail) {
-        Thumbnail = thumbnail;
+    public int getImageM() {
+        return ImageM;
+    }
+
+    public void setImageM(int imageM) {
+        ImageM = imageM;
     }
 }

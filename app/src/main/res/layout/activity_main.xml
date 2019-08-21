@@ -1,18 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
 <androidx.appcompat.widget.Toolbar
-        android:background="@color/light_blue"
+        android:background="@color/background_screen"
         android:id="@+id/toolbar_menu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 </androidx.appcompat.widget.Toolbar>
 
 <androidx.recyclerview.widget.RecyclerView
-        android:layout_below="@+id/toolbar_menu"
         android:id="@+id/rv_menu_slide"
+        android:layout_below="@+id/toolbar_menu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -26,4 +30,6 @@
 
     </androidx.recyclerview.widget.RecyclerView>
 
-</RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>

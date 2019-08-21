@@ -5,24 +5,40 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".QrcodeActivity">
+        tools:context=".AgendaActivity">
+
     <Toolbar
-            android:id="@+id/toolbar_qrcode"
+            android:id="@+id/toolbar_Agenda"
             android:background="@drawable/gradient_bg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
         <ImageView
-                android:id="@+id/img_back_qr"
+                android:id="@+id/back_Agenda"
                 android:src="@drawable/ic_back"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
 
         <TextView
                 android:textSize="23sp"
-                android:text="My QR Code"
+                android:text="Schedule"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
     </Toolbar>
+
+    <TextView
+            android:layout_below="@+id/toolbar_Agenda"
+            android:text="November 2019"
+            android:id="@+id/txt_Agenda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    <androidx.recyclerview.widget.RecyclerView
+            android:verticalScrollbarPosition="right"
+            android:layout_below="@+id/txt_Agenda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
 
 </RelativeLayout>

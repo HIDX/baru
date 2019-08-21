@@ -9,6 +9,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.eventm.AgendaActivity
 import com.example.eventm.Item.ItemProduct
 import com.example.eventm.QrcodeActivity
 import com.example.eventm.R
@@ -25,14 +26,15 @@ class ProductAdapter(private val mcontext: Context, private val mData: List<Item
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
 
-        holder.tv_item_title.setText(mData[position].getTitle())
-        holder.img_item_thumbnail.setImageResource(mData[position].getThumbnail())
+        holder.tv_item_title.setText(mData[position].title)// ambil data produt title
+        holder.img_item_thumbnail.setImageResource(mData[position].imageM)//ambil data produt img
+        // untuk inten ke card view home
         holder.cardView.setOnClickListener {
             if (position == 0) {
                 val intentQrcode = Intent(mcontext, QrcodeActivity::class.java)
                 mcontext.startActivity(intentQrcode)
             } else if (position == 1) {
-                val intentAgenda = Intent(mcontext, QrcodeActivity::class.java)
+                val intentAgenda = Intent(mcontext, AgendaActivity::class.java)
                 mcontext.startActivity(intentAgenda)
             }
         }

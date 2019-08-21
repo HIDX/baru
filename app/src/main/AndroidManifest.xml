@@ -13,25 +13,33 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             android:usesCleartextTraffic="true">
+        <activity android:name=".GalleryActivity">
+        </activity>
+        <activity android:name=".MessageActivity">
+        </activity>
+        <activity android:name=".AgendaActivity">
+        </activity>
         <activity android:name=".ForgetPasswordActivity">
         </activity>
-        <activity android:name=".QrcodeActivity">
+        <activity
+                android:name=".QrcodeActivity"
+                android:parentActivityName=".MainActivity">
         </activity>
         <activity
                 android:name=".SplashScreenActivity"
                 android:noHistory="true"
                 android:theme="@style/AppTheme">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
         </activity>
         <activity android:name=".RegisterActivity"/>
         <activity android:name=".LoginActivity"/>
         <activity android:name=".WelcomeActivity">
         </activity>
         <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
         </activity>
     </application>
 

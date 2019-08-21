@@ -8,7 +8,7 @@
     <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/gradient_bg"/>
+            android:background="@color/background_screen"/>
 
     <TextView
             android:id="@+id/logo"
@@ -39,7 +39,7 @@
                 android:layout_marginBottom="16dp"
                 android:text="Sign in"
                 android:textSize="18sp"
-                android:textColor="#2d2d2d" />
+                android:textColor="@color/khaki" />
 
         <EditText
                 android:id="@+id/email_login"
@@ -67,7 +67,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="Forget Password?"
-                android:textColor="@color/cold" />
+                android:textColor="@color/khaki" />
 
         <Button
                 android:id="@+id/btn_login"
@@ -160,7 +160,7 @@
                 android:layout_marginTop="16dp"
                 android:text="Sign up"
                 android:layout_marginLeft="4dp"
-                android:textColor="@color/yellow"
+                android:textColor="@color/khaki"
 
         />
 
