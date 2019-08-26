@@ -5,10 +5,11 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/gray_qrcode"
         tools:context=".QrcodeActivity">
     <Toolbar
             android:id="@+id/toolbar_qrcode"
-            android:background="@drawable/gradient_bg"
+            android:background="@color/background_screen_toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -24,5 +25,54 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
     </Toolbar>
+
+    <LinearLayout
+            android:gravity="center"
+            android:layout_below="@+id/toolbar_qrcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_qrcode"
+            android:layout_margin="16dp"
+    >
+
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Attendance"
+                    android:textSize="24sp"
+                    android:textColor="#000000"
+                    />
+
+            <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ayy"
+                    android:layout_marginTop="16dp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="HID"
+                    android:layout_marginTop="8dp"
+            />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="hid@gmail.com"/>
+
+            <ImageView
+                    android:scaleType="center"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="36dp"
+                    android:src="@drawable/ic_qrcode"/>
+
+
+    </LinearLayout>
 
 </RelativeLayout>

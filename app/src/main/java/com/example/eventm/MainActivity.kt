@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        //itemProduct
         itemList = ArrayList<ItemProduct>()
         itemList.add(ItemProduct("Barcode", R.drawable.ic_qrcode))
         itemList.add(ItemProduct("Agenda", R.drawable.ic_agenda))
@@ -40,13 +41,11 @@ class MainActivity : AppCompatActivity() {
         itemList.add(ItemProduct("Help", R.drawable.ic_help))
 
         //slider menu
-        val Rview_slide =findViewById<View>(R.id.rv_menu_slide) as RecyclerView // gunaka as rv untuk mengimpor rv nya
+        val Rview_slide=findViewById<View>(R.id.rv_menu_slide) as RecyclerView // gunaka as rv untuk mengimpor rv nya
         val name_Slide= arrayOf("tablet","smartphone","computer")
         val LManager = LinearLayoutManager(this, HORIZONTAL,false)//jika merah impor saja manual
         Rview_slide.setLayoutManager(LManager)
-        //Dots_Home = findViewById<View>(R.id.dots_Card) as LinearLayout
         Rview_slide.adapter = SliderHomeAdapter(Img_Slide,name_Slide,this)
-        // createDots(0)
 
 
         //rv item menu
@@ -56,26 +55,5 @@ class MainActivity : AppCompatActivity() {
         myrvItem.adapter = Adapter_item
 
     }
-    /*private fun createDots(current_position: Int) {
-        if (Dots_Home != null) {
-            Dots_Home!!.removeAllViews()
-        }
-        dots = Array(Img_Slide.size,{i ->ImageView(this)})
 
-        for (i in Img_Slide.indices) {
-            dots!![i] = ImageView(this)
-            if (i == current_position) {
-                dots!![i].setImageDrawable(ContextCompat.getDrawable(this, R.drawable.active_dots))
-            } else {
-                dots!![i].setImageDrawable(ContextCompat.getDrawable(this, R.drawable.default_dots))
-            }
-
-            val params =
-                LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT)
-            params.setMargins(4, 0, 4, 0)
-
-            Dots_Home!!.addView(dots!![i], params)
-
-        }
-    }*/
 }

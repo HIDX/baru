@@ -12,12 +12,12 @@ import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.viewpager.widget.ViewPager
-import com.example.eventm.Adapter.mPagerAdapter
+import com.example.eventm.Adapter.IntroAdapter
 
-class WelcomeActivity : AppCompatActivity(), View.OnClickListener {
+class IntroScreenActivity : AppCompatActivity(), View.OnClickListener {
     // private untuk pembuatan slider
     private var mPager: ViewPager? = null
-    private var mPagerAdapter: mPagerAdapter? = null
+    private var IntroAdapter: IntroAdapter? = null
     private val layouts = intArrayOf(R.layout.intro_first, R.layout.intro_second, R.layout.intro_third)
     //private untuk pembuatan dots
     private var Dots_Layout: LinearLayout? = null
@@ -41,8 +41,8 @@ class WelcomeActivity : AppCompatActivity(), View.OnClickListener {
         }
 
         mPager = findViewById<View>(R.id.view_pager) as ViewPager
-        mPagerAdapter = mPagerAdapter(layouts, this)
-        mPager!!.adapter = mPagerAdapter
+        IntroAdapter = IntroAdapter(layouts, this)
+        mPager!!.adapter = IntroAdapter
 
         Dots_Layout = findViewById<View>(R.id.dots_Layout) as LinearLayout
 

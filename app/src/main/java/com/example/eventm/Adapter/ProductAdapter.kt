@@ -27,7 +27,7 @@ class ProductAdapter(private val mcontext: Context, private val mData: List<Item
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
 
         holder.tv_item_title.setText(mData[position].title)// ambil data produt title
-        holder.img_item_thumbnail.setImageResource(mData[position].imageM)//ambil data produt img
+        holder.img_item.setImageResource(mData[position].ImageM)//ambil data produt img
         // untuk inten ke card view home
         holder.cardView.setOnClickListener {
             if (position == 0) {
@@ -47,14 +47,14 @@ class ProductAdapter(private val mcontext: Context, private val mData: List<Item
     class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
         internal var tv_item_title: TextView
-        internal var img_item_thumbnail: ImageView
+        internal var img_item: ImageView
         internal var cardView: CardView
 
         init {
 
             tv_item_title = itemView.findViewById<View>(R.id.title_img_id) as TextView
-            img_item_thumbnail = itemView.findViewById<View>(R.id.item_img_id) as ImageView
-            cardView = itemView.findViewById<View>(R.id.cv_id) as CardView
+            img_item = itemView.findViewById<View>(R.id.item_img_id) as ImageView
+            cardView = itemView.findViewById<View>(R.id.cv_id_product) as CardView
         }
     }
 }

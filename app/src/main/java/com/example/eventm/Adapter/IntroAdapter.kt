@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.viewpager.widget.PagerAdapter
 
-class mPagerAdapter(private val layouts: IntArray, private val context: Context) : PagerAdapter() {
+class IntroAdapter(private val layouts: IntArray, private val context: Context) : PagerAdapter() {
     private val layoutInflater: LayoutInflater
 
     init {

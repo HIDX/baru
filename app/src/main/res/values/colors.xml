@@ -146,5 +146,6 @@
   <color name="black">#000000</color>
   <color name="white_new">#FDFBFB</color>
   <color name="grayy">#DCDCDC</color>
-  <color name="background_screen">#1080A0</color>
+  <color name="background_screen_toolbar">#1080A0</color>
+  <color name="gray_qrcode">#f0f0f0</color>
 </resources>
