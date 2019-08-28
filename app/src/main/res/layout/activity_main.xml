@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+            tools:context=".MainActivity">
 
     <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:id="@+id/rl_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
 <androidx.appcompat.widget.Toolbar
         android:background="@color/background_screen_toolbar"
@@ -22,14 +25,72 @@
 
 </androidx.recyclerview.widget.RecyclerView>
 
+        <!-- more hide rv!-->
+<RelativeLayout
+        android:id="@+id/moreandhide"
+        android:layout_below="@+id/rv_menu_slide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:id="@+id/relativevToSlide"
+            android:layout_width="match_parent"
+            android:layout_height="336dp">
     <androidx.recyclerview.widget.RecyclerView
+            android:nestedScrollingEnabled="false"
             android:id="@+id/rv_item_product"
-            android:layout_below="@id/rv_menu_slide"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-
     </androidx.recyclerview.widget.RecyclerView>
 
+
+
+    </RelativeLayout>
+    <RelativeLayout
+            android:id="@+id/relativeZaplon"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/relativevToSlide"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+      <TextView
+                android:id="@+id/txt_hm"
+                android:gravity="right"
+                android:layout_alignParentRight="true"
+                android:textSize="20dp"
+                android:text="@string/more"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+    </RelativeLayout>
+
+</RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+                android:layout_below="@+id/moreandhide"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:id="@+id/cv_id_product"
+                app:cardCornerRadius="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <LinearLayout
+                    android:layout_margin="20dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <ImageView
+                        android:id="@+id/item_img_id"
+                        android:src="@drawable/ic_qrcode"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                </ImageView>
+            </LinearLayout>
+                android:layout_below="@+id/moreandhide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+        </androidx.cardview.widget.CardView>
 
     </RelativeLayout>
 </ScrollView>

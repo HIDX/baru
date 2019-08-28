@@ -15,21 +15,20 @@ import androidx.viewpager.widget.ViewPager
 import com.example.eventm.Adapter.IntroAdapter
 
 class IntroScreenActivity : AppCompatActivity(), View.OnClickListener {
-    // private untuk pembuatan slider
-    private var mPager: ViewPager? = null
-    private var IntroAdapter: IntroAdapter? = null
-    private val layouts = intArrayOf(R.layout.intro_first, R.layout.intro_second, R.layout.intro_third)
-    //private untuk pembuatan dots
-    private var Dots_Layout: LinearLayout? = null
-    private var dots: Array<ImageView>? = null
-    //private untuk pembuatan btn
-    private var BtnNext: Button? = null
-    private var BtnSkip: Button? = null
-
+    //untuk pembuatan slider
+    lateinit var mPager: ViewPager
+    lateinit var IntroAdapter: IntroAdapter
+    var layouts = intArrayOf(R.layout.intro_first, R.layout.intro_second, R.layout.intro_third)
+    //untuk pembuatan dots
+    lateinit var Dots_Layout: LinearLayout
+    lateinit var dots: Array<ImageView>
+    // untuk pembuatan btn
+    lateinit var BtnNext: Button
+    lateinit var BtnSkip: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_welcome)
+        setContentView(R.layout.activity_intro)
         if (PreferenceManager(this).checkPreference()) {
             loadHome()
         }
@@ -64,12 +63,12 @@ class IntroScreenActivity : AppCompatActivity(), View.OnClickListener {
                 if (position == layouts.size - 1)
                 // kondisiuntuk menghilangkan text di slide terakhir
                 {
-                    BtnNext!!.setText("Done")
+                    BtnNext!!.setText("Done") //menganti text saat di slide terakhir
                     BtnSkip!!.visibility = View.INVISIBLE// untuk menghilangkan text di slide terakhir
                 }
                 else
                 {
-                    BtnNext!!.setText("Next")
+                    BtnNext!!.setText("Next") //tidak text saat jika di slide terakhir
                     BtnSkip!!.visibility = View.VISIBLE// untuk terlihat di di slide yg lain
                 }
             }
