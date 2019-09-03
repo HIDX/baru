@@ -29,7 +29,7 @@ class LoginActivity: AppCompatActivity(){
         btn_login.setOnClickListener {
             authenticateUser(email_login.text.toString(),password_login.text.toString()) // memaggil fungsi yg sudah dibuat
 
-            Toast.makeText(this, email_login.text.toString()+password_login.text.toString(), Toast.LENGTH_LONG).show() //untuk menapilkan id and pw
+            //Toast.makeText(this, email_login.text.toString()+password_login.text.toString(), Toast.LENGTH_LONG).show() //untuk menapilkan id and pw
         }
 
     }
@@ -40,21 +40,20 @@ class LoginActivity: AppCompatActivity(){
                 override fun onFailure(call: Call<APIresponse>, t: Throwable) {
                     Log.e("errornya tuh disini", t!!.message.toString())
                     Toast.makeText(this@LoginActivity,t!!.message, Toast.LENGTH_LONG).show()
-
                 }
 
                 override fun onResponse(call: Call<APIresponse>, response: Response<APIresponse>) {
                     Log.e("responsenya ", response.body().toString())
-//                    if (response!!.body()!!.error){
-//                        Log.i("respone error", response!!.body().toString())
-//                        Toast.makeText(this@LoginActivity,response.body()!!.error_msg, Toast.LENGTH_LONG).show()
-//                    }
-//                    else {
-//                        Log.i("respone tidak error", response!!.body().toString())
-//                        val intent = Intent(this@LoginActivity, MainActivity::class.java)// untuk pindah ke main activity nya
-//                        startActivity(intent)
-//
-//                    }
+                    if (response!!.body()!!.StatusCode == 400){
+                        Log.i("respone error", response!!.body().toString())
+                        Toast.makeText(this@LoginActivity,response.body()!!.Error, Toast.LENGTH_LONG).show()
+                    }
+                    else {
+                        Log.i("respone tidak error", response!!.body().toString())
+                        val intent = Intent(this@LoginActivity, MainActivity::class.java)// untuk pindah ke main activity nya
+                        startActivity(intent)
+
+                    }
                 }
             })
 

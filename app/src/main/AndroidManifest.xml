@@ -13,6 +13,10 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             android:usesCleartextTraffic="true">
+        <activity android:name=".ProfileActivity">
+        </activity>
+        <activity android:name=".QuizActivity">
+        </activity>
         <activity android:name=".GalleryActivity">
         </activity>
         <activity android:name=".MessageActivity">
@@ -24,23 +28,25 @@
         <activity
                 android:name=".QrcodeActivity"
                 android:parentActivityName=".MainActivity">
+
         </activity>
         <activity
                 android:name=".SplashScreenActivity"
                 android:noHistory="true"
                 android:theme="@style/AppTheme">
-        </activity>
-        <activity android:name=".RegisterActivity"/>
-        <activity android:name=".LoginActivity"/>
-        <activity android:name=".IntroScreenActivity">
-
-        </activity>
-        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+        </activity>
+        <activity android:name=".RegisterActivity"/>
+        <activity android:name=".LoginActivity"/>
+        <activity android:name=".IntroActivity">
+
+        </activity>
+        <activity android:name=".MainActivity">
+
         </activity>
     </application>
 

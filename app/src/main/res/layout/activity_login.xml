@@ -39,7 +39,7 @@
                 android:layout_marginBottom="16dp"
                 android:text="Sign in"
                 android:textSize="18sp"
-                android:textColor="@color/khaki" />
+                android:textColor="@color/khaki"/>
 
         <EditText
                 android:id="@+id/email_login"
@@ -48,7 +48,7 @@
                 android:backgroundTint="#BDBDBD"
                 android:hint="Username"
                 android:textSize="18sp"
-                android:inputType="text" />
+                android:inputType="text"/>
 
         <EditText
                 android:id="@+id/password_login"
@@ -67,7 +67,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:text="Forget Password?"
-                android:textColor="@color/khaki" />
+                android:textColor="@color/khaki"/>
 
         <Button
                 android:id="@+id/btn_login"
@@ -113,7 +113,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:text="OR" />
+                    android:text="OR"/>
 
 
         </RelativeLayout>

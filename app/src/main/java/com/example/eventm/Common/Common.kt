@@ -8,3 +8,11 @@ object Common {
     val api:IMyAPI
     get()=RetrofitClient.getclient(BASE_URL).create(IMyAPI::class.java)
 }
+
+object Common2 {
+    val BASE_URL_g="http://104.248.149.236/general/public/"
+    val api:IMyAPI
+        get()=RetrofitClient.getclient(BASE_URL_g).create(IMyAPI::class.java)
+}
+
+

@@ -21,8 +21,6 @@ class AgendaActivity : AppCompatActivity() {
         setContentView(R.layout.activity_agenda)
         back_Agenda.setOnClickListener {startActivity( Intent(this,MainActivity::class.java)) }
 
-        view_pager_Agenda.adapter =FragmentAgendaAdapter(supportFragmentManager)
-
         itemList= ArrayList<itemAgenda>()
         itemList.add(itemAgenda("1","mon"))
         itemList.add(itemAgenda("2","tue"))
@@ -41,6 +39,7 @@ class AgendaActivity : AppCompatActivity() {
             layoutManager = LinearLayoutManager(this@AgendaActivity, LinearLayout.HORIZONTAL, false)
             adapter = AgendaAdapter(this@AgendaActivity, itemList)
         }
+        view_pager_Agenda.adapter =FragmentAgendaAdapter(supportFragmentManager)
 
     }
 }

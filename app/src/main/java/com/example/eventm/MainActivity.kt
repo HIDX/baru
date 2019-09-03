@@ -1,8 +1,10 @@
 package com.example.eventm
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.ImageView
 import android.widget.LinearLayout.HORIZONTAL
 import android.widget.RelativeLayout
 import android.widget.TextView
@@ -12,9 +14,11 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.eventm.Adapter.ProductAdapter
 import com.example.eventm.Adapter.SliderHomeAdapter
 import com.example.eventm.Item.ItemProduct
+import kotlinx.android.synthetic.main.activity_main.*
 import java.util.ArrayList
 
 class MainActivity : AppCompatActivity() {
+    lateinit var imgProfile: ImageView
     private var isVisible: Boolean? = false
     lateinit var mRelativeZaplon: RelativeLayout
     lateinit var mRelativeToSlide: RelativeLayout
@@ -58,19 +62,24 @@ class MainActivity : AppCompatActivity() {
         mAnimationManager = ExpandOrCollapse()
         mRelativeZaplon = findViewById<View>(R.id.relativeZaplon) as RelativeLayout
         mRelativeToSlide = findViewById<View>(R.id.relativevToSlide) as RelativeLayout
-        mRelativeZaplon!!.setOnClickListener(View.OnClickListener {//kondisi untuk membuat anismasi expand/collapse
+        mRelativeZaplon!!.setOnClickListener(View.OnClickListener {//kondi si untuk membuat anismasi expand/collapse
             if (this!!.isVisible!!) {
-                mAnimationManager?.collapse(mRelativeToSlide!!, 500, 880)
+                mAnimationManager?.collapse(mRelativeToSlide!!, 500, 1020)
                 isVisible = false
                 txthm.setText("More ∨")
 
             } else if (!isVisible!!) {
-                mAnimationManager?.expand(mRelativeToSlide!!, 500, 1800)
+                mAnimationManager?.expand(mRelativeToSlide!!, 500, 2000)
                 isVisible = true
                 txthm.setText("Hide ∧")
-
             }
         })
+
+        //profil
+        val imgProfil =findViewById<View>(R.id.img_main_profil)
+        imgProfil.setOnClickListener { val intentProfil = Intent(this, QrcodeActivity::class.java)
+            startActivity(intentProfil)}
+
     }
 
 }

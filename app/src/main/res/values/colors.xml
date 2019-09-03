@@ -148,4 +148,5 @@
   <color name="grayy">#DCDCDC</color>
   <color name="background_screen_toolbar">#1080A0</color>
   <color name="gray_qrcode">#f0f0f0</color>
+  <color name="quiz">#1080A0</color>
 </resources>

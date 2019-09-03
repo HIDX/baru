@@ -33,8 +33,8 @@ class RegisterActivity : AppCompatActivity() {
                 }
 
                 override fun onResponse(call: Call<APIresponse>, responseLogReg: Response<APIresponse>) { // saat server merespon
-                    if(responseLogReg!!.body()!!.error){
-                        Toast.makeText(this@RegisterActivity, responseLogReg.body()!!.error_msg, Toast.LENGTH_SHORT).show()
+                    if(responseLogReg!!.body()!!.StatusCode == 400){
+                        Toast.makeText(this@RegisterActivity, responseLogReg.body()!!.Error, Toast.LENGTH_SHORT).show()
                     }else{
                         val intent = Intent(this@RegisterActivity, LoginActivity::class.java)
                         startActivity(intent)
