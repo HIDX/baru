@@ -77,8 +77,11 @@ class MainActivity : AppCompatActivity() {
 
         //profil
         val imgProfil =findViewById<View>(R.id.img_main_profil)
-        imgProfil.setOnClickListener { val intentProfil = Intent(this, QrcodeActivity::class.java)
-            startActivity(intentProfil)}
+        imgProfil.setOnClickListener { val intentProfil = Intent(this, ProfileActivity::class.java)
+            startActivity(intentProfil)
+            finish()
+        }
+
 
     }
 

@@ -13,6 +13,9 @@ class QrcodeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_qrcode)
-        img_back_qr.setOnClickListener { startActivity(Intent(this,MainActivity::class.java))}
+        img_back_qr.setOnClickListener {
+            startActivity(Intent(this,MainActivity::class.java))
+            finish()
+        }
     }
 }

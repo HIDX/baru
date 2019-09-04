@@ -19,7 +19,10 @@ class AgendaActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_agenda)
-        back_Agenda.setOnClickListener {startActivity( Intent(this,MainActivity::class.java)) }
+        back_Agenda.setOnClickListener {
+            startActivity( Intent(this,MainActivity::class.java))
+            finish()
+        }
 
         itemList= ArrayList<itemAgenda>()
         itemList.add(itemAgenda("1","mon"))

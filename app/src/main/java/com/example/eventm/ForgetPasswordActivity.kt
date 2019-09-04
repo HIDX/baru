@@ -11,6 +11,9 @@ class ForgetPasswordActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_forget_password)
 
-        txt_back_fp.setOnClickListener { startActivity(Intent(this,LoginActivity::class.java)) }
+        txt_back_fp.setOnClickListener {
+            startActivity(Intent(this,LoginActivity::class.java))
+            finish()
+        }
     }
 }

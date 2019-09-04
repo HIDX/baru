@@ -14,6 +14,9 @@ import com.example.eventm.Item.ItemProduct
 import com.example.eventm.QrcodeActivity
 import com.example.eventm.QuizActivity
 import com.example.eventm.R
+import android.app.Activity
+
+
 
 class ProductAdapter(private val mcontext: Context, private val mData: List<ItemProduct>) :
     RecyclerView.Adapter<ProductAdapter.MyViewHolder>() {
@@ -34,39 +37,51 @@ class ProductAdapter(private val mcontext: Context, private val mData: List<Item
             if (position == 0) {
                 val intentQrcode = Intent(mcontext, QrcodeActivity::class.java)
                 mcontext.startActivity(intentQrcode)
+                (mcontext as Activity).finish()
             } else if (position == 1) {
                 val intentAgenda = Intent(mcontext, AgendaActivity::class.java)
                 mcontext.startActivity(intentAgenda)
+                (mcontext as Activity).finish()
             }else if (position == 2) {
                 val intentAgenda = Intent(mcontext, AgendaActivity::class.java)
                 mcontext.startActivity(intentAgenda)
+                (mcontext as Activity).finish()
             }else if (position == 3) {
                 val intentAgenda = Intent(mcontext, AgendaActivity::class.java)
                 mcontext.startActivity(intentAgenda)
+                (mcontext as Activity).finish()
             }else if (position == 4) {
                 val intentAgenda = Intent(mcontext, AgendaActivity::class.java)
                 mcontext.startActivity(intentAgenda)
+                (mcontext as Activity).finish()
             }else if (position == 5) {
                 val intentAgenda = Intent(mcontext, AgendaActivity::class.java)
                 mcontext.startActivity(intentAgenda)
+                (mcontext as Activity).finish()
             }else if (position == 6) {
                 val intentAgenda = Intent(mcontext, QuizActivity::class.java)
                 mcontext.startActivity(intentAgenda)
+                (mcontext as Activity).finish()
             }else if (position == 7) {
                 val intentAgenda = Intent(mcontext, AgendaActivity::class.java)
                 mcontext.startActivity(intentAgenda)
+                (mcontext as Activity).finish()
             }else if (position == 8) {
                 val intentAgenda = Intent(mcontext, AgendaActivity::class.java)
                 mcontext.startActivity(intentAgenda)
+                (mcontext as Activity).finish()
             }else if (position == 9) {
                 val intentAgenda = Intent(mcontext, AgendaActivity::class.java)
                 mcontext.startActivity(intentAgenda)
+                (mcontext as Activity).finish()
             }else if (position == 10) {
                 val intentAgenda = Intent(mcontext, AgendaActivity::class.java)
                 mcontext.startActivity(intentAgenda)
+                (mcontext as Activity).finish()
             }else if (position == 11) {
                 val intentAgenda = Intent(mcontext, AgendaActivity::class.java)
                 mcontext.startActivity(intentAgenda)
+                (mcontext as Activity).finish()
             }
         }
     }
