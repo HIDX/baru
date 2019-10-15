@@ -12,7 +12,7 @@
             android:topLeftRadius="15dp"
             android:topRightRadius="15dp" />
     <solid
-    android:color="@color/btm_logiut">
+    android:color="@color/btn_logut">
 
     </solid>
 

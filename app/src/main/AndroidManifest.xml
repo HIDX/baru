@@ -13,6 +13,14 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             android:usesCleartextTraffic="true">
+        <activity android:name=".HelpActivity">
+        </activity>
+        <activity android:name=".AboutActivity">
+        </activity>
+        <activity android:name=".SurveyActivity">
+        </activity>
+        <activity android:name=".EditActivity">
+        </activity>
         <activity android:name=".ProfileActivity">
         </activity>
         <activity android:name=".QuizActivity">
@@ -28,7 +36,6 @@
         <activity
                 android:name=".QrcodeActivity"
                 android:parentActivityName=".MainActivity">
-
         </activity>
         <activity
                 android:name=".SplashScreenActivity"
@@ -43,10 +50,8 @@
         <activity android:name=".RegisterActivity"/>
         <activity android:name=".LoginActivity"/>
         <activity android:name=".IntroActivity">
-
         </activity>
         <activity android:name=".MainActivity">
-
         </activity>
     </application>
 

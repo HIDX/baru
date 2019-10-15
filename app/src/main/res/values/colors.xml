@@ -149,5 +149,6 @@
   <color name="background_screen_toolbar">#1080A0</color>
   <color name="gray_qrcode">#f0f0f0</color>
   <color name="quiz">#1080A0</color>
-  <color name="btm_logiut">#cc3636</color>
+  <color name="btn_logut">#cc3636</color>
+  <color name="btn_yes">#49ba6c</color>
 </resources>

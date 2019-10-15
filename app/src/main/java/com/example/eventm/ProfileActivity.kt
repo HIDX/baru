@@ -33,7 +33,8 @@ class ProfileActivity : AppCompatActivity() {
         }
             //button edit profil
         ll_edit_profil.setOnClickListener {
-            startActivity(Intent(this, LoginActivity::class.java))
+            startActivity(Intent(this, EditActivity
+            ::class.java))
             finish()
         }
             //buttin change password

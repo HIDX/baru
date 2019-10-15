@@ -43,7 +43,6 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="#BDBDBD"
                 android:hint="Username"
-                android:textSize="18sp"
                 android:inputType="text"/>
 
         <EditText

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_qrcode"
+        tools:context=".HelpActivity"
+        android:orientation="vertical">
+
+    <Toolbar
+            android:id="@+id/toolbar_qrcode"
+            android:background="@color/background_screen_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:id="@+id/img_profil_back"
+                android:src="@drawable/ic_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:textSize="23sp"
+                android:text="Help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </Toolbar>
+
+    <TextView
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Contact Us! If You Need Help"
+    />
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <TextView
+            android:layout_marginLeft="20dp"
+            android:id="@+id/name1"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="HIID"
+    />
+    <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/line1"
+            android:layout_toRightOf="@+id/name1"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="|"
+    />
+    <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/line1"
+            android:textColor="@color/blue_violet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Public Relation"
+    />
+    </RelativeLayout>
+
+    <LinearLayout
+            android:background="@drawable/ronded_button"
+            android:paddingLeft="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/toolbar_qrcode"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Phone Number"
+        />
+        <TextView
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="+6281246920023"
+        />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Email"
+        />
+        <TextView
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="aw@gmail.com"
+                android:layout_marginBottom="10dp"
+        />
+
+    </LinearLayout>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:layout_marginLeft="20dp"
+                android:id="@+id/name2"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="HIID"
+        />
+        <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/line2"
+                android:layout_toRightOf="@+id/name2"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="|"
+        />
+        <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/line2"
+                android:textColor="@color/blue_violet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="CEO"
+        />
+    </RelativeLayout>
+
+    <LinearLayout
+            android:paddingLeft="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/toolbar_qrcode"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/ronded_button">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Phone Number"
+        />
+        <TextView
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="+6281246920023"
+        />
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="Email"
+        />
+        <TextView
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="aw@gmail.com"
+                android:layout_marginBottom="10dp"
+        />
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>
