@@ -9,13 +9,9 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.eventm.AgendaActivity
 import com.example.eventm.Item.ItemProduct
-import com.example.eventm.QrcodeActivity
-import com.example.eventm.QuizActivity
-import com.example.eventm.R
 import android.app.Activity
-
+import com.example.eventm.*
 
 
 class ProductAdapter(private val mcontext: Context, private val mData: List<ItemProduct>) :
@@ -63,7 +59,7 @@ class ProductAdapter(private val mcontext: Context, private val mData: List<Item
                 mcontext.startActivity(intentAgenda)
                 (mcontext as Activity).finish()
             }else if (position == 7) {
-                val intentAgenda = Intent(mcontext, AgendaActivity::class.java)
+                val intentAgenda = Intent(mcontext, SouvenirActivity::class.java)
                 mcontext.startActivity(intentAgenda)
                 (mcontext as Activity).finish()
             }else if (position == 8) {

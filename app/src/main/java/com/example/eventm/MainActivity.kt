@@ -14,7 +14,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.eventm.Adapter.ProductAdapter
 import com.example.eventm.Adapter.SliderHomeAdapter
 import com.example.eventm.Item.ItemProduct
-import kotlinx.android.synthetic.main.activity_main.*
 import java.util.ArrayList
 
 class MainActivity : AppCompatActivity() {
@@ -44,13 +43,13 @@ class MainActivity : AppCompatActivity() {
         itemList.add(ItemProduct("About",R.drawable.ic_about))
         itemList.add(ItemProduct("Help",R.drawable.ic_help))
 
-        //slider menu
+        //slider menu top
         val Rview_slide=findViewById<View>(R.id.rv_menu_slide) as RecyclerView // gunaka as rv untuk mengimpor rv nya
         val name_Slide= arrayOf("tablet","smartphone","computer")
         val LManager = LinearLayoutManager(this, HORIZONTAL,false)//jika merah impor saja manual
         Rview_slide.setLayoutManager(LManager)
         Rview_slide.adapter = SliderHomeAdapter(Img_Slide,name_Slide,this)
-
+        
         //rv item menu
         val myrvItem = findViewById<View>(R.id.rv_item_product) as RecyclerView
         val Adapter_item = ProductAdapter(this, itemList)
@@ -79,7 +78,7 @@ class MainActivity : AppCompatActivity() {
         val imgProfil =findViewById<View>(R.id.img_main_profil)
         imgProfil.setOnClickListener { val intentProfil = Intent(this, ProfileActivity::class.java)
             startActivity(intentProfil)
-            finish()
+        finish()
         }
 
 

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:cardCornerRadius="30dp"
+        android:background="@color/active_dots"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<LinearLayout
+        android:orientation="vertical"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="300dp"
+        android:layout_height="450dp">
+    <TextView
+            android:textSize="21sp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Confirmation"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"/>
+    <TextView
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Show the QR Code to the committee for confirmation that you have exchanged the voucher"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"/>
+    <ImageView
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="150dp"
+            android:layout_height="150dp"/>
+
+
+
+
+        <Button
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="30dp"
+                android:id="@+id/dialogCancelBtn"
+                android:text="Cancel"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"/>
+
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>
