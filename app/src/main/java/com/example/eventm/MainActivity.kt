@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.eventm.Adapter.ProductAdapter
 import com.example.eventm.Adapter.SliderHomeAdapter
 import com.example.eventm.Item.ItemProduct
+import kotlinx.android.synthetic.main.activity_main.*
 import java.util.ArrayList
 
 class MainActivity : AppCompatActivity() {
@@ -32,7 +33,7 @@ class MainActivity : AppCompatActivity() {
         itemList = ArrayList<ItemProduct>()
         itemList.add(ItemProduct("Barcode", R.drawable.ic_qrcode))
         itemList.add(ItemProduct("Agenda", R.drawable.ic_agenda))
-        itemList.add(ItemProduct("Message", R.drawable.ic_message))
+        itemList.add(ItemProduct("Message", R.drawable.ic_agenda ))
         itemList.add(ItemProduct("Map", R.drawable.ic_map))
         itemList.add(ItemProduct("Gallery", R.drawable.ic_gallery))
         itemList.add(ItemProduct("Document", R.drawable.ic_document))
@@ -44,7 +45,7 @@ class MainActivity : AppCompatActivity() {
         itemList.add(ItemProduct("Help",R.drawable.ic_help))
 
         //slider menu top
-        val Rview_slide=findViewById<View>(R.id.rv_menu_slide) as RecyclerView // gunaka as rv untuk mengimpor rv nya
+         // gunaka as rv untuk mengimpor rv nya
         val name_Slide= arrayOf("tablet","smartphone","computer")
         val LManager = LinearLayoutManager(this, HORIZONTAL,false)//jika merah impor saja manual
         Rview_slide.setLayoutManager(LManager)
@@ -80,8 +81,6 @@ class MainActivity : AppCompatActivity() {
             startActivity(intentProfil)
         finish()
         }
-
-
     }
 
 }

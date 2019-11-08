@@ -40,6 +40,4 @@ data class Screen(
     val updated_at:String,
     val deleted_at:String,
     val Activation:String
-
-
 )

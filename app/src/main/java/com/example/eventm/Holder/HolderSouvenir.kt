@@ -33,6 +33,12 @@ class HolderSouvenir (itemView: View, private val mContex: Context): RecyclerVie
            //AlertBuilder
            val mBuilder = AlertDialog.Builder(mContex,R.style.CustomDialog)//CustumDialog untuk transparan di style
                .setView(mDialogView)
+           //costume
+           val dialog = mDialogView.alert_dialog_s
+           val image = mDialogView.image_s
+
+           // get the input txt intxtview
+
            //Show Dialog
            val mAlertDialog=mBuilder.show()
 
@@ -41,7 +47,6 @@ class HolderSouvenir (itemView: View, private val mContex: Context): RecyclerVie
                mAlertDialog.dismiss()
            }
         }
-
 
     }
 

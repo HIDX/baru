@@ -15,11 +15,14 @@
             android:layout_height="wrap_content">
 
     </Toolbar>
-
+<RelativeLayout
+        android:layout_below="@+id/toolbar_souvenir"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
     <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rv_souvenir"
-            android:layout_below="@+id/toolbar_souvenir"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
     </androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>
 </LinearLayout>

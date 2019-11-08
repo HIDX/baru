@@ -4,7 +4,6 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.eventm.Holder.HolderSlideHome
 import com.example.eventm.Holder.HolderSouvenir
 import com.example.eventm.R
 

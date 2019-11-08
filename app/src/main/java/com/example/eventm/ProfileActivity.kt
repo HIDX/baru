@@ -23,7 +23,6 @@ class ProfileActivity : AppCompatActivity() {
             editor.clear()
             editor.commit()
             startActivity(Intent(this, LoginActivity::class.java))
-            finish()
 
         }
             //button history // fungsi finish agar saat intent tidak menumpuk
@@ -35,12 +34,11 @@ class ProfileActivity : AppCompatActivity() {
         ll_edit_profil.setOnClickListener {
             startActivity(Intent(this, EditActivity
             ::class.java))
-            finish()
+
         }
             //buttin change password
         ll_change_password.setOnClickListener {
-            startActivity(Intent(this, LoginActivity::class.java))
-            finish()
+
         }
 
 
