@@ -3,6 +3,7 @@ package com.example.eventm
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.orhanobut.hawk.Hawk
 
 class SplashScreenActivity : AppCompatActivity() {
 

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp"
+            android:layout_width="350dp"
+            android:layout_height="150dp">
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <TextView
+                    android:id="@+id/txt_title_sh"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="16dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toRightOf="@+id/img_souvenir"
+                    android:text=" ada acara"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:layout_below="@+id/txt_title_sh"
+                    android:id="@+id/txt_location_sh"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/img_souvenir"
+                    android:text="jakarta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <RelativeLayout
+                    android:id="@+id/rl_sh"
+                    android:layout_below="@+id/txt_location_sh"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content">
+
+
+                <TextView
+                        android:layout_toLeftOf="@+id/linesh"
+                        android:id="@+id/txt_time1_sh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="08.00 AM"
+                        android:textSize="12sp" />
+
+                <TextView
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/linesh"
+                        android:layout_width="10dp"
+                        android:layout_height="40dp"
+                        android:text="-"
+                        android:textSize="30sp" />
+
+                <TextView
+                        android:layout_marginTop="15dp"
+                        android:layout_toRightOf="@+id/linesh"
+                        android:id="@+id/txt_time2_sh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="09.00 AM"
+                        android:textSize="12sp" />
+            </RelativeLayout>
+            <ImageView
+                    android:layout_marginTop="80dp"
+                    android:layout_toRightOf="@id/rl_sh"
+                    android:layout_marginLeft="90dp"
+                    android:background="@drawable/image_circle"
+                    android:src="@mipmap/ic_launcher"
+                    android:id="@+id/img_session_history"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:scaleType="fitXY"
+                    />
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
